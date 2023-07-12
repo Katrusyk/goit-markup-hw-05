@@ -880,7 +880,7 @@ card-set-item {
   top: 50%;
   left: 50%;
 
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 
   width: 408px;
   min-height: 584px;
@@ -924,13 +924,16 @@ card-set-item {
   fill: var(--white);
 }
 
+.modal-container {
+  margin-bottom: 8px;
+}
+
 .modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
   display: block;
-  padding-top: 48px;
   margin-bottom: 16px;
   width: 360px;
   color: var(--navyblue);
@@ -947,9 +950,14 @@ card-set-item {
 
 .modal-form-field {
   display: block;
-  margin-bottom: 8px;
 
   position: relative;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--icon-color);
+  margin-bottom: 4px;
 }
 
 .modal-form-input {
@@ -973,14 +981,7 @@ card-set-item {
 
 .modal-form-label {
   display: block;
-  margin-bottom: 4px;
-
-  color: var(--lightslate);
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.17;
-  letter-spacing: 0.48px;
+  position: relative;
 }
 
 .modal-form-icon {
